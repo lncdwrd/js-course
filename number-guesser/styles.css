@@ -1,0 +1,32 @@
+.input.is-correct {
+  border: 1px solid green !important;
+}
+
+.input::placeholder.is-correct {
+  color: green;
+}
+
+.is-correct {
+  color: green;
+}
+
+.input.is-wrong {
+  border: 1px solid crimson !important;
+}
+
+.input::placeholder.is-wrong {
+  color: crimson;
+}
+
+.is-wrong {
+  color: crimson;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.input[type=number].is-disabled {
+  cursor: default;
+  background-color: rgb(233, 233, 233);
+}
