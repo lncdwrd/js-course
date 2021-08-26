@@ -50,7 +50,6 @@ function updateLocalStorageTasks() {
 
 
 
-
 loadEventListeners();
 
 function loadEventListeners() {
