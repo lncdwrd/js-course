@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherJS</title>
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center vh-100">
+      <div class="card col-6 py-4">
+        <div class="card-body">
+          <div class="card-header bg-transparent p-0 border-0 mb-5 text-center">
+            <h3 class="card-title js-city">Location Title</h3>
+            <h4 class="card-subtitle mb-2 text-muted weather-desc js-weather-desc">Weather Description</h4>
+            <img src="" alt="" class="js-card-icon">
+          </div>
+
+          <ul class="list-group mb-4">
+            <li class="list-group-item text-center js-humidity"></li>
+            <li class="list-group-item text-center js-pressure"></li>
+            <li class="list-group-item text-center js-feels-like"></li>
+            <li class="list-group-item text-center js-wind"></li>
+          </ul>
+
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+              data-bs-target="#weatherResult">Change Location</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="weatherResult" class="modal fade">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="city" class="form-label">City</label>
+              <input type="email" class="form-control" id="cityInput" aria-describedby="emailHelp">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary js-save-changes">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="/app.js"></script>
+</body>
+
+</html>
