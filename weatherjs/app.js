@@ -95,6 +95,3 @@ window.addEventListener('DOMContentLoaded', () => {
   
   loadWeather(currentCity);
 });
-
-
-

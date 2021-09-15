@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <h1>User Form</h1>
+        <form action="" id="userForm">
+          <div class="form-group mb-3">
+            <label for="">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+            <div class="invalid-feedback">
+              Name must be 2 to 10 characters
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="">ZIP code</label>
+            <input type="text" class="form-control" id="zip_code" placeholder="ZIP Code">
+            <div class="invalid-feedback">
+              Enter a valid ZIP code
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="Email">
+            <div class="invalid-feedback">
+              Enter a valid email
+            </div>
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="">Phone</label>
+            <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+            <div class="invalid-feedback">
+              Enter a valid phone
+            </div>
+          </div>
+
+          <input type="submit" value="submit" class="btn btn-primary btn-block">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="/app.js"></script>
+</body>
+
+</html>
